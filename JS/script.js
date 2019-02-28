@@ -97,7 +97,7 @@ NOTE: ES6 array function only works on nodelists
 
 // traversing the DOM
 
-const itemList = document.querySelector("#items");
+// const itemList = document.querySelector("#items");
 // parentNode
 // console.log(itemList.parentNode);
 // itemList.parentNode.style.backgroundColor = "#ccc";
@@ -146,40 +146,75 @@ const itemList = document.querySelector("#items");
 // createElement
 
 // CREAT A DIV
-const newDiv = document.createElement("div");
+// const newDiv = document.createElement("div");
 
-// add class
-newDiv.className = "hello";
-newDiv.id = "hello1";
-// add atttribute
-newDiv.setAttribute("title", "hello Div");
-/* ADDING A CONTENT */
-// Create a text node
-const newDivText = document.createTextNode("Hello World");
-// Add text to div
-newDiv.appendChild(newDivText);
+// // add class
+// newDiv.className = "hello";
+// newDiv.id = "hello1";
+// // add atttribute
+// newDiv.setAttribute("title", "hello Div");
+// /* ADDING A CONTENT */
+// // Create a text node
+// const newDivText = document.createTextNode("Hello World");
+// // Add text to div
+// newDiv.appendChild(newDivText);
 
-//insert new element in the DOM
-const container = document.querySelector("header .container");
-const h1 = document.querySelector("header h1");
-container.insertBefore(newDiv, h1);
+// //insert new element in the DOM
+// const container = document.querySelector("header .container");
+// const h1 = document.querySelector("header h1");
+// container.insertBefore(newDiv, h1);
 
-const subHeader = document.createElement("h2");
+// const subHeader = document.createElement("h2");
 
-// add class and ID
-subHeader.id = "submarine";
-subHeader.className = "subName";
+// // add class and ID
+// subHeader.id = "submarine";
+// subHeader.className = "subName";
 
-// add attribute
-subHeader.setAttribute("name", "Sub header");
+// // add attribute
+// subHeader.setAttribute("name", "Sub-header");
 
-//add a text content
-const newSubHeaderText = document.createTextNode("I am a sub HEADER");
-subHeader.appendChild(newSubHeaderText);
+// //add a text content
+// const newSubHeaderText = document.createTextNode("I am a sub HEADER");
+// subHeader.appendChild(newSubHeaderText);
 
-//inser sub header after main header
-const lastChild = document.querySelector("header lastChild"); // lol! found a use for lastChild element!
-container.insertBefore(subHeader, lastChild);
+// //insert sub header after main header
+// const nextSibling = document.querySelector("header nextSibling"); // lol! found a use for nextSibling element!
+// container.insertBefore(subHeader, nextSibling);
+// console.log(subHeader);
+// console.log(newDiv);
 
-console.log(subHeader);
-console.log(newDiv);
+/*** EVENTS ****/
+
+// const button = document.getElementById("button");
+// button.addEventListener("click", buttonClick);
+
+// function buttonClick() {
+//   ul.insertBefore(newItem, ul.lastChild);
+// }
+
+// //create new Item
+// const newItem = document.createElement("li");
+// newItem.className = "list-group-item";
+// const itemText = document.createTextNode("Item");
+// newItem.appendChild(itemText);
+// const ul = document.querySelector(".container #items");
+
+// const button = document
+//   .getElementById("button")
+//   .addEventListener("click", buttonClick);
+
+// function buttonClick(e) {
+// console.log(e.target);
+// console.log(e.target.id);
+// console.log(e.target.className);
+// console.log(e.target.classList);
+// const output = document.getElementById("output");
+// output.innerHTML = "<h3>" + e.target.id + "</h3>";
+// console.log(e.clientX); from the window
+// console.log(e.clientY);
+// console.log(e.offsetX);
+// console.log(e.offsetY);
+// console.log(e.altKey);
+// console.log(e.ctrlKey);
+// console.log(e.shiftKey);
+// }
