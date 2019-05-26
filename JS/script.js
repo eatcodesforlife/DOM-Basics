@@ -103,13 +103,13 @@ NOTE: ES6 array function only works on nodelists
 // itemList.parentNode.style.backgroundColor = "#ccc";
 // console.log(itemList.parentNode.parentNode);
 
-// parentElement;
+// parentElement; /* same as parentNode*/
 // console.log(itemList.parentElement);
 // itemList.parentElement.style.backgroundColor = "#ccc";
 // console.log(itemList.parentElement.parentElement);
 
 // childNodes
-// console.log(itemList.childNodes); not recommended since it includes whitespaces
+// console.log(itemList.childNodes); //not recommended since it includes whitespaces
 
 // children - returns an HTML collection
 // console.log(itemList.children);
@@ -192,7 +192,7 @@ NOTE: ES6 array function only works on nodelists
 //   ul.insertBefore(newItem, ul.lastChild);
 // }
 
-// //create new Item
+// // create new Item
 // const newItem = document.createElement("li");
 // newItem.className = "list-group-item";
 // const itemText = document.createTextNode("Item");
@@ -226,8 +226,8 @@ NOTE: ES6 array function only works on nodelists
 
 /**** MOUSE EVENTS *****/
 
-const button = document.querySelector("#button");
-const box = document.getElementById("box");
+// const button = document.querySelector("#button");
+// const box = document.getElementById("box");
 
 // button.addEventListener("click", runEvent);
 // button.addEventListener("dblclick", runEvent);
@@ -253,19 +253,20 @@ var select = document.querySelector("select");
 // itemInput.addEventListener("blur", runEvent);
 // itemInput.addEventListener("cut", runEvent);
 // itemInput.addEventListener("paste", runEvent);
+
 // itemInput.addEventListener("input", runEvent);
+
 // select.addEventListener("change", runEvent);
-// select.addEventListener("input", runEvent);
 
 form.addEventListener("submit", runEvent);
 
 function runEvent(e) {
-  e.preventDefault();
+  e.preventDefault(); //function to prevent submit button from submitting for the  purpose of this exercise
   console.log("EVENT TYPE: " + e.type);
 
   // console.log(e.target.value);
   // document.getElementById("output").innerHTML =
-  //   "<h3>" + e.target.value + "</h3>";
+  // "<h3>" + e.target.value + "</h3>";
 
   // output.innerHTML =
   //   "<h3>MouseX: " + e.offsetX + "</h3><h3>MouseY: " + e.offsetY + "</h3>";
